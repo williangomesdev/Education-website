@@ -30,7 +30,35 @@
             <div id="menu-btn" class="fas fa-bars"></div>
         </div>
     </header>
-    <script src="js/script.js"></script>
+    <div class="account-form">
+        <div id="close-form" class="fas fa-times"></div>
+        <div class="buttons">
+            <span class="btn login-btn">Login</span>
+            <span class="btn register-btn">Cadastrar</span>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>Faça seu login</h3>
+            <input type="email" placeholder="Seu e-mail" class="box">
+            <input type="password" placeholder="Sua senha" class="box">
+            <div class="flex">
+                <input type="checkbox" name="" id="remenber-me">
+                <label for="remember-me">Lembrar-me</label>
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+            <input type="submit" value="Entrar agora" class="btn">
+        </form>
+
+        <form action="" class="register-form">
+            <h3>Cadastre-se agora</h3>
+            <input type="email" placeholder="Seu e-mail" class="box">
+            <input type="password" placeholder="Sua senha" class="box">
+            <input type="password" placeholder="Confirme sua senha" class="box">
+            <input type="submit" value="Cadastrar" class="btn">
+        </form>
+    </div>
+    <script src="js/navbar.js"></script>
+    <script src="js/account.js"></script>
 </body>
 
 </html>
