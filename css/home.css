@@ -367,9 +367,11 @@ section {
 .subjects .box-container .box:hover {
   background: #0eb582;
 }
-.subjects .box-container .box:hover h3,
-.subjects .box-container .box:hover p {
+.subjects .box-container .box:hover h3 {
   color: #fff;
+}
+.subjects .box-container .box:hover p {
+  color: #eee;
 }
 .subjects .box-container .box img {
   height: 10rem;

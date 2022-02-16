@@ -44,9 +44,12 @@
       &:hover {
         background: $green;
 
-        h3,
-        p {
+        h3 {
           color: $white;
+        }
+
+        p {
+          color: $light-white;
         }
       }
 
