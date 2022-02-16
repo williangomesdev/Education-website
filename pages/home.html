@@ -7,14 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+
     <title>Home</title>
 </head>
 
 <body>
-    <header class="header">
+    <section class="header">
         <a href="#" class="logo"><i class="fas fa-lightbulb"></i> educação</a>
 
         <nav class="navbar">
@@ -29,7 +32,7 @@
             <div id="account-btn" class="fas fa-user"></div>
             <div id="menu-btn" class="fas fa-bars"></div>
         </div>
-    </header>
+    </section>
     <section class="account-form">
         <div id="close-form" class="fas fa-times"></div>
         <div class="buttons">
@@ -59,9 +62,9 @@
     </section>
     <!-- home -->
     <section class="home">
-        <div class="home-slider">
-            <div class="w">
-                <section class="slide" style="background:url(../images/home-slide-1.jpg) no-repeat">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <section class="swiper-slide slide" style="background:url(../images/home-slide-1.jpg) ">
                     <div class="content">
                         <h3>Os melhores cursos você vai encontrar aqui!</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, esse. Obcaecati deserunt
@@ -71,7 +74,7 @@
                     </div>
                 </section>
 
-                <section class="slide" style="background:url(../images/home-slide-2.jpg) no-repeat">
+                <section class="swiper-slide slide" style="background:url(../images/home-slide-2.jpg) ">
                     <div class="content">
                         <h3>Os melhores cursos você vai encontrar aqui!</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, esse. Obcaecati deserunt
@@ -81,7 +84,7 @@
                     </div>
                 </section>
 
-                <section class="slide" style="background:url(../images/home-slide-3.jpg) no-repeat">
+                <section class="swiper-slide slide" style="background:url(../images/home-slide-3.jpg) ">
                     <div class="content">
                         <h3>Os melhores cursos você vai encontrar aqui!</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, esse. Obcaecati deserunt
@@ -91,6 +94,7 @@
                     </div>
                 </section>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <!-- home -->
@@ -138,9 +142,10 @@
             canal mr. web designer(Youtube)</div>
     </section>
 
-
-    <script src=" js/navbar.js"></script>
-    <script src="js/account.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/account.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/slide.js"></script>
 </body>
 
 </html>

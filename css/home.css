@@ -309,4 +309,39 @@ section {
   html {
     font-size: 50%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+.home {
+  padding: 0;
+}
+.home .slide {
+  display: flex;
+  align-items: center;
+  height: 60rem;
+  background-position: cover !important;
+  background-size: cover !important;
+}
+.home .slide .content {
+  width: 60rem;
+}
+.home .slide .content h3 {
+  font-size: 5rem;
+  text-transform: capitalize;
+  color: #444;
+  color: #fff;
+}
+.home .slide .content p {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #777;
+  color: #eee;
+  padding: 1rem 0;
+}
+.home .swiper-pagination-bullet-active {
+  background: #0eb582;
+}
+
+@media (max-width: 48rem) {
+  .home .slide .content h3 {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=home.css.map */

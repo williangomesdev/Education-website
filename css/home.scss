@@ -1,0 +1,37 @@
+@import "./style.scss";
+
+.home {
+  padding: 0;
+
+  .slide {
+    display: flex;
+    align-items: center;
+    height: 60rem;
+    background-position: cover !important;
+    background-size: cover !important;
+
+    .content {
+      width: 60rem;
+
+      h3 {
+        @include titleText(5rem);
+        color: $white;
+      }
+      p {
+        @include graphText(1.6rem);
+        color: $light-white;
+        padding: 1rem 0;
+      }
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $green;
+  }
+}
+
+@media (max-width: 48rem) {
+  .home .slide .content h3 {
+    font-size: 3rem;
+  }
+}
