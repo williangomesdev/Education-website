@@ -1,0 +1,26 @@
+$green: #0eb582;
+$light-green: #f0fdfa;
+$light-color: #777;
+$light-white: #eee;
+$black: #444;
+$white: #fff;
+$border: 0.1rem solid $green;
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
+}
+
+@mixin titleText($titleSize) {
+  font-size: $titleSize;
+  text-transform: capitalize;
+  color: $black;
+}
+
+@mixin graphText($graphSize) {
+  font-size: $graphSize;
+  line-height: 2;
+  color: $light-color;
+}
