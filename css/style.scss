@@ -51,6 +51,10 @@ html {
     background: $green;
   }
 }
+
+section {
+  padding: 5rem 10%;
+}
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -221,60 +225,140 @@ html {
   }
 }
 
+.footer {
+  background: $light-green;
+
+  .box-container {
+    @include grid(25rem);
+
+    .box {
+      h3 {
+        @include titleText(2.2rem);
+        padding: 1rem 0;
+
+        i {
+          color: $green;
+        }
+      }
+
+      .share {
+        margin-top: 1rem;
+        a {
+          height: 4.5rem;
+          width: 4.5rem;
+          margin-right: 0.3rem;
+          line-height: 4.5rem;
+          font-size: 1.7rem;
+          text-align: center;
+          background: $green;
+          color: $white;
+
+          &:hover {
+            background-color: $black;
+          }
+        }
+      }
+
+      .link {
+        @include graphText(1.7rem);
+        padding: 0.5rem 0;
+        display: block;
+
+        &:hover {
+          color: $green;
+          text-decoration: underline;
+        }
+      }
+    }
+    p {
+      @include graphText(1.5rem);
+      padding: 1rem 0;
+    }
+
+    .email {
+      width: 100%;
+      padding: 1.2rem 1.4rem;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      border: $border;
+    }
+  }
+
+  .credit {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: $border;
+    @include titleText(2rem);
+
+    span {
+      color: $green;
+    }
+  }
+}
+
 /* media queries */
 
 @media (max-width: 75rem) {
   .header {
     padding: 2rem 5%;
   }
-}
 
-@media (max-width: 61.9375rem) {
-  html {
-    font-size: 55%;
+  section {
+    padding: 3rem 5%;
   }
 
-  .header {
-    padding: 2rem;
-  }
-}
-@media (max-width: 48rem) {
-  .header {
-    #menu-btn {
-      display: inline-block;
+  @media (max-width: 61.9375rem) {
+    html {
+      font-size: 55%;
     }
 
-    .navbar {
-      position: fixed;
-      top: 0;
-      right: -105%;
-      width: 30rem;
-      background: $white;
-      height: 100%;
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      z-index: 1200;
+    .header {
+      padding: 2rem;
+    }
 
-      #close-navbar {
-        display: block;
-      }
-      &.active {
-        box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.8);
-        right: 0;
+    section {
+      padding: 3rem 2rem;
+    }
+  }
+  @media (max-width: 48rem) {
+    .header {
+      #menu-btn {
+        display: inline-block;
       }
 
-      a {
-        display: block;
-        margin: 1rem 0;
-        text-align: center;
-        font-size: 3rem;
+      .navbar {
+        position: fixed;
+        top: 0;
+        right: -105%;
+        width: 30rem;
+        background: $white;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        z-index: 1200;
+
+        #close-navbar {
+          display: block;
+        }
+        &.active {
+          box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.8);
+          right: 0;
+        }
+
+        a {
+          display: block;
+          margin: 1rem 0;
+          text-align: center;
+          font-size: 3rem;
+        }
       }
     }
   }
-}
-@media (max-width: 28.125rem) {
-  html {
-    font-size: 50%;
+  @media (max-width: 28.125rem) {
+    html {
+      font-size: 50%;
+    }
   }
 }
