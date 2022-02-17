@@ -1,0 +1,22 @@
+.heading-link {
+  text-align: center;
+  background: url(../images/heading-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.heading-link h3 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: #444;
+}
+.heading-link p {
+  font-size: 2rem;
+  line-height: 2;
+  color: #777;
+}
+.heading-link p a {
+  color: #0eb582;
+}
+.heading-link p a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=about.css.map */

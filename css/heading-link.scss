@@ -1,0 +1,24 @@
+@import './var.scss';
+
+.heading-link {
+    text-align: center;
+    background: url(../images/heading-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+    h3 {
+      @include titleText(4rem);
+    }
+  
+    p {
+      @include graphText(2rem);
+  
+      a {
+        color: $green;
+  
+        &:hover{
+            text-decoration: underline;
+        }
+      }
+    }
+  }
