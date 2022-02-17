@@ -1,4 +1,9 @@
-@import './style.css';
-@import './header.css';
-@import './heading-link.css';
-@import './footer.css';
+@import "var";
+@import "global";
+@import "header";
+@import "home";
+@import "about";
+@import "footer";
+@import "mediaQueries";
+
+

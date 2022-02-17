@@ -1,0 +1,58 @@
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $green;
+  }
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+img {
+  user-select: none;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  @include titleText(3.5rem);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  border: $border;
+  background: $light-green;
+  color: $green;
+  text-transform: capitalize;
+  &:hover {
+    background: $green;
+    color: $white;
+  }
+}
+
+
+
+
