@@ -1,4 +1,4 @@
-@import './var.scss';
+@import "./var.scss";
 
 * {
   font-family: "Nunito", sans-serif;
@@ -31,7 +31,7 @@ section {
   padding: 5rem 10%;
 }
 
-img{
+img {
   user-select: none;
 }
 .heading {
@@ -115,14 +115,22 @@ img{
       }
     }
   }
+
+  .home .slide .content h3 {
+    font-size: 3rem;
+  }
 }
 
-@media (max-width: 28.125rem) {
+@media (max-width: 450px) {
   html {
     font-size: 50%;
   }
 
   .heading {
     font-size: 3.5rem;
+  }
+
+  .about .content .about-title {
+    font-size: 4rem;
   }
 }
