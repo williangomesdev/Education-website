@@ -481,6 +481,59 @@ img {
   color: #0eb582;
 }
 
+.courses {
+  margin: 3rem 2rem;
+}
+.courses .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 2rem;
+}
+.courses .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+.courses .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.courses .box-container .box .image h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #444;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #fff;
+  padding: 5rem 1.5rem;
+}
+.courses .box-container .content {
+  padding: 2rem;
+  text-align: center;
+  border: 0.1rem solid #0eb582;
+}
+.courses .box-container .content h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+}
+.courses .box-container .content p {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #777;
+}
+.courses .box-container .content .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 0.1rem solid #0eb582;
+}
 .footer {
   background: #f0fdfa;
 }

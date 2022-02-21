@@ -1,0 +1,58 @@
+.courses {
+  margin: 3rem 2rem;
+
+  .box-container {
+    @include grid(40rem);
+
+    .box {
+      .image {
+        height: 25rem;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        h3 {
+          @include titleText(1.5rem);
+          position: absolute;
+          top: 1rem;
+          left: 1rem;
+          background: $white;
+          padding: 5rem 1.5rem;
+        }
+      }
+    }
+
+    .content {
+      padding: 2rem;
+      text-align: center;
+      border: $border;
+
+      h3 {
+        @include titleText(2rem);
+      }
+
+      p {
+        padding: 1rem 0;
+        @include graphText(1.6rem);
+      }
+
+      .icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: $border;
+
+        span{
+            
+        }
+      }
+    }
+  }
+}
