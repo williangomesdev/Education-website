@@ -8,7 +8,7 @@ var swiper = new Swiper(".home-slider", {
   grabCursor: true,
 });
 
-//slide sem marcadores 
+//slide sem marcadores
 var swiper = new Swiper(".home-courses-slider", {
   loop: true,
   grabCursor: true,
@@ -53,6 +53,29 @@ var swiper = new Swiper(".reviews-slider", {
     },
     991: {
       slidesPerView: 3,
+    },
+  },
+});
+
+//slide da pagina contato patrocinadores
+var swiper = new Swiper(".logo-slider", {
+  loop: true,
+  grabCursor: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    450: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
     },
   },
 });

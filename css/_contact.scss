@@ -89,7 +89,7 @@
     .accordion {
       flex: 1 1 50%;
       border: $border;
-      
+
       &.active {
         .accordion-heading {
           background: $green;
@@ -134,5 +134,14 @@
         display: none;
       }
     }
+  }
+}
+
+.logo-container {
+  text-align: center;
+
+  img {
+    height: 10rem;
+    pointer-events: none;
   }
 }
