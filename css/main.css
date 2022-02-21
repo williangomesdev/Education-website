@@ -639,7 +639,7 @@ img {
   align-items: flex-start;
 }
 .faq .accordion-container .accordion {
-  flex: 1 1 40rem;
+  flex: 1 1 50%;
   border: 0.1rem solid #0eb582;
 }
 .faq .accordion-container .accordion.active .accordion-heading {

@@ -1,3 +1,4 @@
+//more courses button from the courses page
 let morecoursebtn = document.querySelector(".load-more .btn");
 
 morecoursebtn.onclick = () => {
@@ -6,3 +7,4 @@ morecoursebtn.onclick = () => {
   });
   morecoursebtn.style.display = "none";
 };
+
