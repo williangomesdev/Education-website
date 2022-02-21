@@ -1,10 +1,15 @@
 .courses {
-  margin: 3rem 2rem;
-
   .box-container {
     @include grid(40rem);
 
     .box {
+      &:hover .image img {
+        transform: scale(1.1);
+      }
+
+      &.hide {
+        display: none;
+      }
       .image {
         height: 25rem;
         overflow: hidden;
@@ -49,10 +54,20 @@
         padding-top: 2rem;
         border-top: $border;
 
-        span{
-            
+        span {
+          @include titleText(1.5rem);
+
+          i {
+            color: $green;
+            padding-right: 1.5rem;
+          }
         }
       }
     }
+  }
+
+  .load-more {
+    margin-top: 2rem;
+    text-align: center;
   }
 }

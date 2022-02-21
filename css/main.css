@@ -481,13 +481,16 @@ img {
   color: #0eb582;
 }
 
-.courses {
-  margin: 3rem 2rem;
-}
 .courses .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 2rem;
+}
+.courses .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+.courses .box-container .box.hide {
+  display: none;
 }
 .courses .box-container .box .image {
   height: 25rem;
@@ -534,6 +537,20 @@ img {
   padding-top: 2rem;
   border-top: 0.1rem solid #0eb582;
 }
+.courses .box-container .content .icons span {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #444;
+}
+.courses .box-container .content .icons span i {
+  color: #0eb582;
+  padding-right: 1.5rem;
+}
+.courses .load-more {
+  margin-top: 2rem;
+  text-align: center;
+}
+
 .footer {
   background: #f0fdfa;
 }
